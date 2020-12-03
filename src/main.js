@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
-
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+function messageFunction(name, weather) {
+  let message = "Hello, Adam";
+  if (weather == "sunny") {
+    let message = "It is a nice day";
+    console.log(message);
+  } else {
+    let message = "It is " + weather + " today";
+    console.log(message);
+  }
+  console.log(message);
+}
+messageFunction("Adam", "rain");
