@@ -1,8 +1,6 @@
-import Vue from 'vue'
-import App from './App.vue'
-
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+function myFunc(name) {
+  let myLocalVar = "sunny";
+  let innerFunction = ()=> ("Hello" + name + ". Today is " + myLocalVar + ".");
+  return innerFunction();
+}
+console.log(myFunc(" Adam"));
