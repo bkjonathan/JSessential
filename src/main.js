@@ -1,8 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
+import * as math from './math'
+// import * as math from './math'
 
-Vue.config.productionTip = false
+let data =[290,39,39,58,474,50];
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+console.log('Addtional',math.addition(data))
+console.log('Multiply',math.multiply(data))
+console.log('Subtract',math.subtract(data))
+console.log('Divided',math.divied(10,2))
+console.log('Mean',math.mean(data))
